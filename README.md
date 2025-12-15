@@ -1,5 +1,11 @@
 # hyprland
 
+## Installing Basic Tools
+
+```bash
+sudo pacman -S --needed git curl vim
+```
+
 ## Getting the AUR Helper
 
 Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
@@ -15,7 +21,7 @@ makepkg -si
 
 ```bash
 paru -S --needed \
-kitty bash ly \
+kitty fish ly \
 wofi waybar \
 pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol \
 thunar networkmanager \
