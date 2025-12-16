@@ -103,14 +103,6 @@ Then, you need to enable the Ly service:
 sudo systemctl enable ly@tty2.service
 ```
 
-### Archiving Utility
-
-Tar is a command-line utility for creating and extracting archives. It’s essential for handling various packages and files.
-
-```bash
-sudo pacman -S tar
-```
-
 ### Terminal Emulator and Shell
 
 Kitty is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
@@ -188,4 +180,48 @@ A notification daemon is essential for managing system notifications. Many apps 
 
 ```bash
 sudo pacman -S mako
+```
+
+## Essential Utilities
+
+### File Management
+
+GVfs (GNOME Virtual File System) is a userspace virtual filesystem that lets applications access remote servers and local devices as if they were local files, without extra protocol-specific coding.
+
+```bash
+sudo pacman -S gvfs
+```
+
+Thunar is a lightweight, fast file manager with a clean interface, providing essential file operations like browsing, copying, and moving files.
+
+```bash
+sudo pacman -S thunar
+```
+
+### File Viewers
+
+imv is a minimal image viewer for the terminal or Wayland, fast and lightweight, ideal for quickly browsing images.
+
+```bash
+sudo pacman -S imv
+```
+
+mpv is a versatile media player that supports video and audio playback for a wide range of formats, with a minimal interface and high performance.
+
+```bash
+sudo pacman -S mpv
+```
+
+Zathura is a lightweight, keyboard-driven PDF and document viewer with a focus on simplicity and speed.
+
+```bash
+sudo pacman -S zathura-pdf-mupdf
+```
+
+### Tarball Compression
+
+Tar is a command-line utility for creating and extracting archives. It’s essential for handling various packages and files.
+
+```bash
+sudo pacman -S tar
 ```
