@@ -111,20 +111,6 @@ Standard fonts for readability, emoji support, and multilingual text (CJK script
 sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-ubuntu-font-family
 ```
 
-### Display Manager
-
-SDDM is recommended for Hyprland, but Ly works flawlessly and is simpler, cleaner, and ideal for this minimal setup.
-
-```bash
-sudo pacman -S ly
-```
-
-Then, you need to enable the Ly service:
-
-```bash
-sudo systemctl enable ly@tty2.service
-```
-
 ### Terminal Emulator and Shell
 
 Kitty is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
@@ -155,29 +141,46 @@ chsh -s "$(command -v fish)"
 
 With the base system ready, we now move to the heart of the guide. This section covers installing Hyprland and configuring essential system software for a stable and efficient workflow.
 
-### Install and Initiate Hyprland
-
-```bash
-sudo pacman -S hyprland
-```
-
-After installing Hyprland, reboot your system. Since we installed the Ly display manager earlier, you can start a session through it.
-
-```bash
-reboot
-```
-
 ### Critical System Components
 
 XDG Desktop Portal provides a bridge for sandboxed apps to access system resources, Polkit manages system-wide privileges, and QT-Wayland enable Wayland support for Qt5 and Qt6 applications, ensuring they run properly in Hyprland.
 
 ```bash
-sudo pacman -S xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
+sudo pacman -S dbus seatd xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
 To autostart Polkit, append the following to your hyprland.conf:
+
 ```ini
 exec-once = /usr/lib/polkit-kde-authentication-agent-1
+```
+
+
+
+### Install Hyprland
+
+```bash
+sudo pacman -S hyprland
+```
+
+### Uwsm
+
+```bash
+sudo pacman -S uwsm
+```
+
+### Display Manager
+
+SDDM is recommended for Hyprland, but Ly works flawlessly and is simpler, cleaner, and ideal for this minimal setup.
+
+```bash
+sudo pacman -S ly
+```
+
+Then, you need to enable the Ly service:
+
+```bash
+sudo systemctl enable ly@tty2.service
 ```
 
 ### Status Bar
