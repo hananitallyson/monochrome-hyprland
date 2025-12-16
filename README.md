@@ -96,6 +96,32 @@ Then, you need to enable the Ly service:
 sudo systemctl enable ly@tty2.service
 ```
 
+### Terminal Emulator and Shell
+
+Kitty is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
+
+```bash
+sudo pacman -S kitty
+```
+
+Fish Shell is a user-friendly command-line shell chosen over Bash for this guide due to its autosuggestions, smart tab completions, and minimal setup, making it simple, efficient, and easy to use.
+
+```bash
+sudo pacman -S fish
+```
+
+To change your login shell to Fish, first add it to /etc/shells:
+
+```bash
+command -v fish | sudo tee -a /etc/shells
+```
+
+Then, change your default shell to Fish:
+
+```bash
+chsh -s "$(command -v fish)"
+```
+
 ### Archiving Utility
 
 Tar is a command-line utility for creating and extracting archives. It’s essential for handling various packages and files.
