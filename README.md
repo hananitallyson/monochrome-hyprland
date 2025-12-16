@@ -32,7 +32,14 @@ To enable multilib support in pacman, edit the configuration file:
 sudo vim /etc/pacman.conf
 ```
 
-Scroll down until you find the following lines and remove the leading #:
+Scroll down until you find the following lines:
+
+```ini
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+```
+
+Then remove the leading #:
 
 ```ini
 [multilib]
