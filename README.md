@@ -96,6 +96,14 @@ Then, you need to enable the Ly service:
 sudo systemctl enable ly@tty2.service
 ```
 
+### Archiving Utility
+
+Tar is a command-line utility for creating and extracting archives. It’s essential for handling various packages and files.
+
+```bash
+sudo pacman -S tar
+```
+
 ### Terminal Emulator and Shell
 
 Kitty is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
@@ -120,14 +128,6 @@ Then, change your default shell to Fish:
 
 ```bash
 chsh -s "$(command -v fish)"
-```
-
-### Archiving Utility
-
-Tar is a command-line utility for creating and extracting archives. It’s essential for handling various packages and files.
-
-```bash
-sudo pacman -S tar
 ```
 
 ## CORE INSTALLATION
