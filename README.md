@@ -169,20 +169,6 @@ After exiting Hyprland, enable Polkit to start automatically by adding the follo
 exec-once = /usr/lib/polkit-kde-authentication-agent-1
 ```
 
-### Session Manager
-
-UWSM is a session manager that helps start Wayland compositors correctly.
-
-```bash
-sudo pacman -S uwsm
-```
-
-To test if UWSM is working correctly, start Hyprland once using it:
-
-```bash
-uwsm start hyprland
-```
-
 ### Display Manager
 
 SDDM is recommended for Hyprland, but Ly works flawlessly and is simpler, cleaner, and ideal for this minimal setup.
