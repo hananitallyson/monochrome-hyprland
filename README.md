@@ -192,6 +192,18 @@ GVfs (GNOME Virtual File System) is a userspace virtual filesystem that lets app
 sudo pacman -S gvfs
 ```
 
+xdg-user-dirs manages standard user folders like Desktop, Documents, Downloads, Music, and Pictures, ensuring they are recognized by file managers and applications.
+
+```bash
+sudo pacman -S xdg-user-dirs
+```
+
+Then, run the command below to automatically generate the folders:
+
+```bash
+xdg-user-dirs-update
+```
+
 Thunar is a lightweight, fast file manager with a clean interface, providing essential file operations like browsing, copying, and moving files.
 
 ```bash
