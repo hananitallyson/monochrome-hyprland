@@ -276,7 +276,7 @@ Tar is a command-line utility for creating and extracting archives. It’s essen
 sudo pacman -S tar
 ```
 
-## Theming
+## Theme Customization
 
 ### Settings Editor
 
@@ -321,4 +321,30 @@ Bibata is an open source, compact, and material designed cursor.
 
 ```bash
 paru -S bibata-cursor-theme-bin
+```
+
+## Miscellaneous Utilities
+
+### Color Picker
+
+Hyprpicker allows you to select colors directly from your screen, a handy tool for design and development tasks.
+
+```bash
+sudo pacman -S hyprpicker
+```
+
+### Clipboard
+
+wl-clipboard provides command-line tools for copying and pasting on Wayland. Cliphist adds clipboard history support, allowing you to recall previously copied text and images.
+
+```bash
+sudo pacman -S wl-clipboard cliphist
+```
+
+### Screenshotting
+
+Grimblast is a simple screenshot utility designed for Wayland and tightly integrated with Hyprland. It supports full-screen, window, and region screenshots, with clipboard and save options.
+
+```bash
+paru -S grimblast-git
 ```
