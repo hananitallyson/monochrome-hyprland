@@ -195,6 +195,8 @@ A notification daemon is essential for managing system notifications. Many apps 
 sudo pacman -S mako
 ```
 
+## Essential Utilities
+
 ### Getting the AUR Helper
 
 Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
@@ -205,8 +207,6 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 ```
-
-## Essential Utilities
 
 ### Network Management
 
