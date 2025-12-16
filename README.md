@@ -70,10 +70,16 @@ sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber p
 
 ### Nerd Fonts & Extra Fonts
 
-Install Nerd Fonts and additional fonts to ensure proper icon support, emoji rendering, and multilingual text display.
+Install Nerd Fonts to enhance icon support and code text display.
 
 ```bash
-sudo pacman -S nerd-fonts noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-ubuntu-font-family
+sudo pacman -S nerd-fonts
+```
+
+Standard fonts for readability, emoji support, and multilingual text (CJK scripts included).
+
+```bash
+sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-ubuntu-font-family
 ```
 
 ### Display Manager
