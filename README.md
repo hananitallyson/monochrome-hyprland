@@ -184,6 +184,20 @@ sudo pacman -S mako
 
 ## Essential Utilities
 
+### Network
+
+NetworkManager is a background service that automatically manages network connections.
+
+```bash
+sudo pacman -S networkmanager
+```
+
+Enable the service to have network management working:
+
+```bash
+sudo systemctl start NetworkManager.service
+```
+
 ### File Management
 
 GVfs (GNOME Virtual File System) is a userspace virtual filesystem that lets applications access remote servers and local devices as if they were local files, without extra protocol-specific coding.
