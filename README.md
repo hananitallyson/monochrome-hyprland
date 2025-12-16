@@ -60,6 +60,13 @@ Install the necessary graphics drivers and libraries for proper GPU support, ren
 sudo pacman -S mesa, lib32-mesa, xf86-video-amdgpu, vulkan-radeon, lib32-vulkan-radeon
 ```
 
+Nvidia option:
+
+```bash
+sudo pacman -S nvidia-dkms nvidia-utils egl-wayland
+```
+
+
 ### Audio Stack
 
 Set up PipeWire and related components for a modern, flexible audio system with volume and device management.
