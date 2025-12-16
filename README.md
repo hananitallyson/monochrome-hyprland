@@ -103,3 +103,7 @@ Tar is a command-line utility for creating and extracting archives. It’s essen
 ```bash
 sudo pacman -S tar
 ```
+
+## CORE INSTALLATION
+
+With the base system ready, we now move to the heart of the guide. This section covers installing Hyprland and configuring essential system software for a stable and efficient workflow.
