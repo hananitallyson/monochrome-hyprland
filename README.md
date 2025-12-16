@@ -375,6 +375,14 @@ Grimblast is a simple screenshot utility designed for Wayland and tightly integr
 yay -S grimblast-git
 ```
 
+### Fetching
+
+Pfetch is a lightweight, minimalist command-line tool for displaying system information.
+
+```bash
+yay -S pfetch
+```
+
 ## CONFIG FILES
 
 ### Dotfiles Management
