@@ -84,7 +84,7 @@ sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberat
 
 ### Display Manager
 
-SDDM is recommended for Hyprland, but Ly is fully compatible—simpler, cleaner, and ideal for this minimal setup.
+SDDM is recommended for Hyprland, but Ly works flawlessly and is simpler, cleaner, and ideal for this minimal setup.
 
 ```bash
 sudo pacman -S ly
@@ -133,3 +133,15 @@ chsh -s "$(command -v fish)"
 ## CORE INSTALLATION
 
 With the base system ready, we now move to the heart of the guide. This section covers installing Hyprland and configuring essential system software for a stable and efficient workflow.
+
+### Install and Initiate Hyprland
+
+```bash
+sudo pacman -S hyprland
+```
+
+After installing Hyprland, reboot your system. Since we installed the Ly display manager earlier, you can start a session through it.
+
+```bash
+reboot
+```
