@@ -210,12 +210,12 @@ sudo pacman -S mako
 
 ### Getting the AUR Helper
 
-Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
+Yay simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
 
 ```bash
 sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 ```
 
@@ -331,7 +331,7 @@ sudo pacman -S hyprpaper
 Bibata is an open source, compact, and material designed cursor.
 
 ```bash
-paru -S bibata-cursor-theme-bin
+yay -S bibata-cursor-theme-bin
 ```
 
 ## MISCELLANEOUS UTILITIES
@@ -357,7 +357,7 @@ sudo pacman -S wl-clipboard cliphist
 Grimblast is a simple screenshot utility designed for Wayland and tightly integrated with Hyprland. It supports full-screen, window, and region screenshots, with clipboard and save options.
 
 ```bash
-paru -S grimblast-git
+yay -S grimblast-git
 ```
 
 ## CONFIG FILES
