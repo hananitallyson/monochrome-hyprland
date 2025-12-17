@@ -369,6 +369,14 @@ Pfetch is a lightweight, minimalist command-line tool for displaying system info
 yay -S pfetch
 ```
 
+### Thumbnails
+
+These packages provide the services and libraries needed to preview files, including images, videos, and PDF documents.
+
+```bash
+sudo pacman -S tumbler gdk-pixbuf2 libjpeg-turbo libpng libwebp ffmpegthumbnailer poppler-glib
+```
+
 ## CONFIG FILES
 
 ### Dotfiles Management
