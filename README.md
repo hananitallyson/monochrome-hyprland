@@ -146,7 +146,7 @@ With the base system ready, we now move to the heart of the guide. This section 
 These packages are required for basic system integration, permissions handling, and proper Wayland support, ensuring applications run correctly in Hyprland.
 
 ```bash
-sudo pacman -S xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
+sudo pacman -S xdg-utils xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
 ### Install Hyprland
