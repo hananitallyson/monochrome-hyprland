@@ -94,7 +94,7 @@ sudo pacman -S nvidia-dkms nvidia-utils egl-wayland
 Set up PipeWire and related components for a modern, flexible audio system with volume and device management.
 
 ```bash
-sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber pavucontrol
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber pavucontrol
 ```
 
 ### Nerd Fonts & Extra Fonts
@@ -231,7 +231,7 @@ sudo pacman -S networkmanager
 Enable the services to have network management working:
 
 ```bash
-sudo systemctl enable --now NetworkManager.service iwd.service
+sudo systemctl enable --now NetworkManager.service
 ```
 
 ### File Management
