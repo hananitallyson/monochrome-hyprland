@@ -10,6 +10,7 @@ Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linu
 - [Theme Customization](#theme-customization)
 - [Miscellaneous Utilities](#miscellaneous-utilities)
 - [Config Files](#config-files)
+- [Gaming Setup](#gaming-setup)
 
 ## GETTING STARTED
 This guide assumes prior knowledge of Linux, with a focus on [Arch Linux](https://archlinux.org/). The following prerequisites are required.
@@ -377,6 +378,14 @@ These packages provide the services and libraries needed to preview files, inclu
 sudo pacman -S tumbler gdk-pixbuf2 libjpeg-turbo libpng libwebp ffmpegthumbnailer poppler-glib
 ```
 
+### Flatpak
+
+Flatpak provides a sandboxed application framework used to install and run software in a distribution-agnostic and isolated environment.
+
+```bash
+sudo pacman -S flatpak
+```
+
 ## CONFIG FILES
 
 ### Dotfiles Management
@@ -397,3 +406,36 @@ cd ~/dotfiles
 stow .
 ```
 
+## GAMING SETUP
+
+This section provides a minimal gaming environment for Arch Linux running Hyprland, focusing on compatibility and performance.
+
+### Core Gaming Stack
+
+This stack includes Steam as the main gaming platform, udev rules for proper controller support, and GameMode to automatically optimize system performance while games are running, including 32-bit support required by Proton.
+
+```bash
+sudo pacman -S steam steam-devices gamemode lib32-gamemode
+```
+
+Heroic Games Launcher is used for running Epic Games Store and GOG titles outside of Steam, installed via Flatpak to ensure isolation and up-to-date runtimes.
+
+```bash
+flatpak install flathub com.heroicgameslauncher.hgl
+```
+
+### ICD Loaders
+
+These packages are required to load the correct Vulkan driver for the GPU and provide both 64-bit and 32-bit Vulkan support, which is essential for Proton and Wine-based games.
+
+```bash
+sudo pacman -S vulkan-icd-loader lib32-vulkan-icd-loader
+```
+
+### Vulkan Layers
+
+DXVK and VKD3D translate DirectX 9/10/11 and DirectX 12 calls to Vulkan, allowing Windows games to run efficiently on Linux, with 32-bit libraries included for full compatibility.
+
+```bash
+sudo pacman -S dxvk vkd3d lib32-dxvk lib32-vkd3d
+```
