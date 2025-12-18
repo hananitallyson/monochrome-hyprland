@@ -431,11 +431,3 @@ These packages are required to load the correct Vulkan driver for the GPU and pr
 ```bash
 sudo pacman -S vulkan-icd-loader lib32-vulkan-icd-loader
 ```
-
-### Vulkan Layers
-
-DXVK and VKD3D translate DirectX 9/10/11 and DirectX 12 calls to Vulkan, allowing Windows games to run efficiently on Linux, with 32-bit libraries included for full compatibility.
-
-```bash
-sudo pacman -S dxvk vkd3d lib32-dxvk lib32-vkd3d
-```
