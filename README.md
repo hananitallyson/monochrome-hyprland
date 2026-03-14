@@ -10,6 +10,7 @@ Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linu
 - [Theme Customization](#theme-customization)
 - [Miscellaneous Utilities](#miscellaneous-utilities)
 - [Config Files](#config-files)
+- [Laptop Utilities](#laptop-utilities)
 - [Gaming Setup](#gaming-setup)
 
 ## GETTING STARTED
@@ -404,6 +405,29 @@ The commands below clone the dotfiles and use Stow to create symbolic links for 
 git clone https://github.com/hananitallyson/dotfiles.git
 cd ~/dotfiles
 stow .
+```
+
+## LAPTOP UTILITIES
+
+### TLP
+
+Optimize Linux Laptop Battery Life.
+
+```bash
+sudo pacman -S tlp tlp-pd tlp-rdw
+sudo systemctl enable tlp.service
+sudo systemctl enable --now tlp-pd.service
+sudo systemctl enable NetworkManager-dispatcher.service
+sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
+sudo tlp start
+```
+
+### AUTO CPUFREQ
+
+Automatic CPU speed & power optimizer for Linux.
+
+```bash
+yay -S auto-cpufreq
 ```
 
 ## GAMING SETUP
